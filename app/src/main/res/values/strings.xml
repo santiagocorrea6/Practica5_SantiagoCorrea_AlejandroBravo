@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SesionROOM</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_create">Create</string>
+    <string name="title_read">Read</string>
+    <string name="title_update">Update</string>
+    <string name="title_list">List</string>
+    <string name="nombre">Digite nombre</string>
+    <string name="telefono">Digite el telefono</string>
+    <string name="cantidad">"Digite la cantidad "</string>
+    <string name="guardar">Guardar</string>
+    <string name="buscar">Buscar</string>
+    <string name="update">Update</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="updates">Actualizar</string>
+    <string name="delete">Eliminar</string>
+    <string name="title_delete">Delete</string>
+    <string name="nombreDeudor">Nombre deudor</string>
+    <string name="deuda">Deuda</string>
+    <string name="correo">Correo</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+</resources>
