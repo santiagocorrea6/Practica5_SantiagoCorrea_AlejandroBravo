@@ -27,13 +27,16 @@ class ReadFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         bt_buscar.setOnClickListener {
+
+            tv_resultados.setText("")
+
             val nombre = et_nombre.text.toString()
 
             val deudorDAO: DeudorDAO = SesionROOM.database.DeudorDAO()
             val deudor = deudorDAO.buscarDeudor(nombre)
 
             if(deudor != null){
-                tv_resultados.text = "Nombre: ${deudor.nombre}\n Telefono: ${deudor.telefono}\n Cantidad: ${deudor.cantidad}"
+                tv_resultados.text = " Nombre: ${deudor.nombre}\n Telefono: ${deudor.telefono}\n Cantidad: ${deudor.cantidad}"
             } else {
                 Toast.makeText(context, "Deudor no existe", Toast.LENGTH_SHORT).show()
             }
