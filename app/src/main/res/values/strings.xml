@@ -5,7 +5,7 @@
     <string name="title_read">Read</string>
     <string name="title_update">Update</string>
     <string name="title_list">List</string>
-    <string name="nombre">Digite nombre</string>
+    <string name="nombre">Digite el nombre</string>
     <string name="telefono">Digite el telefono</string>
     <string name="cantidad">"Digite la cantidad "</string>
     <string name="guardar">Guardar</string>
@@ -21,4 +21,16 @@
     <string name="correo">Correo</string>
     <string name="contrasena">Contraseña</string>
     <string name="ingresar">Ingresar</string>
+    <string name="login">Sign In</string>
+    <string name="registro">Sign Up</string>
+    <string name="no">¿No tienes una cuenta?</string>
+    <string name="registrar">Regístrate</string>
+    <string name="reg">Registrar</string>
+    <string name="deudor">DEUDORES</string>
+    <string name="contrasena2">Verificar contraseña</string>
+    <string name="name">Nombre</string>
+    <string name="crear">AÑADIR DEUDOR</string>
+    <string name="borrar">BORRAR DEUDOR</string>
+    <string name="leer">BUSCAR DEUDOR</string>
+    <string name="actualizar">ACTUALIZAR DEUDOR</string>
 </resources>

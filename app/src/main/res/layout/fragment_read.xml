@@ -7,6 +7,17 @@
     android:orientation="vertical"
     tools:context=".ui.read.ReadFragment" >
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@color/azul"
+        android:gravity="center_horizontal"
+        android:text="@string/leer"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -15,17 +26,29 @@
             android:id="@+id/et_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nombre" />
+            android:layout_margin="20dp"
+            android:background="@drawable/ovalo"
+            android:hint="@string/nombre"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/bt_buscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/buscar" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@color/azul"
+        android:text="@string/buscar"
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/tv_resultados"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
 </LinearLayout>

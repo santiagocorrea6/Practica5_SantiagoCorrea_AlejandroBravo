@@ -6,6 +6,17 @@
     android:orientation="vertical"
     tools:context=".ui.delete.DeleteFragment">
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@color/azul"
+        android:gravity="center_horizontal"
+        android:text="@string/borrar"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -14,7 +25,11 @@
             android:id="@+id/et_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nombre" />
+            android:layout_margin="20dp"
+            android:background="@drawable/ovalo"
+            android:hint="@string/nombre"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -22,6 +37,11 @@
         android:id="@+id/bt_eliminar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/delete" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@color/azul"
+        android:text="@string/delete"
+        android:textColor="@color/white" />
 
 </LinearLayout>
