@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.santiago.sesionroom.R
 import com.santiago.sesionroom.SesionROOM
-import com.santiago.sesionroom.model.DeudorDAO
+import com.santiago.sesionroom.model.local.DeudorDAO
 import kotlinx.android.synthetic.main.fragment_create.et_nombre
 import kotlinx.android.synthetic.main.fragment_read.*
 

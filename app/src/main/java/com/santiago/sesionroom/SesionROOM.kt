@@ -1,9 +1,8 @@
 package com.santiago.sesionroom
 
 import android.app.Application
-import androidx.room.Database
 import androidx.room.Room
-import com.santiago.sesionroom.model.DeudorDataBase
+import com.santiago.sesionroom.model.local.DeudorDataBase
 import com.santiago.sesionroom.model.UsuarioDataBase
 
 class SesionROOM : Application() {

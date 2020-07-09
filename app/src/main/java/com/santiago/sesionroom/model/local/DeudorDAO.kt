@@ -1,6 +1,7 @@
-package com.santiago.sesionroom.model
+package com.santiago.sesionroom.model.local
 
 import androidx.room.*
+import com.santiago.sesionroom.model.local.Deudor
 
 @Dao
 interface DeudorDAO {

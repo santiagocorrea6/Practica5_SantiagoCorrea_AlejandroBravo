@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "243863111832",
+    "firebase_url": "https://sesionroom-b7b14.firebaseio.com",
+    "project_id": "sesionroom-b7b14",
+    "storage_bucket": "sesionroom-b7b14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243863111832:android:0089eef90045529238a8ed",
+        "android_client_info": {
+          "package_name": "com.santiago.sesionroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243863111832-kub5145kkvi3a078q8e6b3u5gc08p9ru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.santiago.sesionroom",
+            "certificate_hash": "b79edceda7ce0a23bfe61f1407a92ed2e0addf13"
+          }
+        },
+        {
+          "client_id": "243863111832-06cfokb81kp9d4jnnl6p32fdlt2mq5ru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3wIgJlKqR0HDhQRURLRP6zle8-h5WKk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243863111832-06cfokb81kp9d4jnnl6p32fdlt2mq5ru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

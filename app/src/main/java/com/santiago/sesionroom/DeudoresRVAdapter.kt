@@ -4,12 +4,10 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.ViewParent
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_deudor.view.*
 
-import com.santiago.sesionroom.model.Deudor
+import com.santiago.sesionroom.model.local.Deudor
 
 class DeudoresRVAdapter (
     var context: Context,

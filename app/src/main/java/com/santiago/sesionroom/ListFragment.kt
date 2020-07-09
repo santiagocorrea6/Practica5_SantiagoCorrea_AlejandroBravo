@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.santiago.sesionroom.model.Deudor
-import com.santiago.sesionroom.model.DeudorDAO
+import com.santiago.sesionroom.model.local.Deudor
+import com.santiago.sesionroom.model.local.DeudorDAO
 import java.util.ArrayList
 
 class ListFragment : Fragment() {

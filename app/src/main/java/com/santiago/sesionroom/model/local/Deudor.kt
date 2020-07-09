@@ -1,4 +1,4 @@
-package com.santiago.sesionroom.model
+package com.santiago.sesionroom.model.local
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

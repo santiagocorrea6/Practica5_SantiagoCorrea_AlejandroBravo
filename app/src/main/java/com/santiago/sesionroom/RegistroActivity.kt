@@ -1,25 +1,52 @@
 package com.santiago.sesionroom
 
-import android.app.Activity
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
-import com.santiago.sesionroom.model.Usuario
-import com.santiago.sesionroom.model.UsuarioDAO
-import kotlinx.android.synthetic.main.activity_login.*
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_registro.*
-import kotlinx.android.synthetic.main.activity_registro.et_email
-import kotlinx.android.synthetic.main.activity_registro.et_pass
-import kotlinx.android.synthetic.main.fragment_create.bt_guardar
-import java.sql.Types
+
 
 class RegistroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
 
-        bt_guardar.setOnClickListener {
+        //AQUI EMPIEZA FIREBASE
+        val mAuth: FirebaseAuth = FirebaseAuth.getInstance()
+
+        bt_registrar.setOnClickListener {
+
+            val email = et_email.text.toString()
+            val password = et_pass.text.toString()
+
+
+            mAuth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(
+                    this
+                ) { task ->
+                    if (task.isSuccessful) {
+                        // crearUsuarioEnBaseDeDatos()
+                        Toast.makeText(
+                            this, "Registro exitoso",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        onBackPressed()
+                    } else {
+
+                        Toast.makeText(
+                            this, "Registro fallido",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        Log.w("TAG", "signInWithEmail:failure", task.getException())
+                    }
+                }
+        }
+    }
+
+
+        /*bt_guardar.setOnClickListener {
             val nombre= et_name.text.toString()
             val correo = et_email.text.toString()
             val contrasena = et_pass.text.toString()
@@ -70,5 +97,9 @@ class RegistroActivity : AppCompatActivity() {
                 }
             }
         }
+    }*/
+
+    private fun crearUsuarioEnBaseDeDatos() {
+        TODO("Not yet implemented")
     }
 }
